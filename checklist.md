@@ -21,6 +21,6 @@
 - [x] 사용자에게 채울 항목 안내 (PDF/Code/Project URL, Intro 문구 확정)
 
 ## 추후(사용자 입력 필요)
-- [ ] 각 논문 PDF / Code / Project 실제 URL
+- [x] 각 논문 PDF / Code URL — 웹 검색·검증 후 arXiv 10편 + GitHub(mlvlab) 8편 채움. IJCV·Inf.Sci. 2편은 preprint 없어 비움
 - [ ] Intro 문구 확정
-- [ ] GitHub Pages 저장소 배포 (`<username>.github.io`)
+- [x] GitHub Pages 저장소 배포 (`joonmyungchoi.github.io`) — https://joonmyungchoi.github.io 라이브
