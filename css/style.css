@@ -72,7 +72,7 @@ section h2 {
 .intro {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .intro-text { flex: 1; }
@@ -81,6 +81,7 @@ section h2 {
 .bio { margin: 0 0 1.2rem; }
 .intro-photo { flex: 0 0 180px; }
 .intro-photo img {
+  display: block;
   width: 180px; height: 180px;
   object-fit: cover;
   border-radius: 12px;
@@ -89,7 +90,7 @@ section h2 {
 
 /* ===== Social icons ===== */
 .social { display: flex; gap: 1rem; font-size: 1.4rem; }
-.intro-photo .social { justify-content: center; margin-top: 0.4rem; }
+.intro-photo .social { justify-content: center; margin-top: 0.5rem; line-height: 1; }
 .social a { color: var(--text-muted); transition: color 0.15s ease; }
 .social a:hover { color: var(--accent); text-decoration: none; }
 
