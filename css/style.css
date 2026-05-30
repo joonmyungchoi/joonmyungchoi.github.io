@@ -93,10 +93,10 @@ section h2 {
 .social a:hover { color: var(--accent); text-decoration: none; }
 
 /* ===== News ===== */
-/* (3) 다음 줄이 반쯤 보이도록 높이 조정 */
+/* (3) 4줄 정도 보이고 다음 줄이 반쯤 걸치도록 높이 조정 */
 .news-wrap { position: relative; }
 .news-scroll {
-  max-height: 135px;
+  max-height: 175px;
   overflow-y: scroll;
   padding-right: 0.75rem;
   scrollbar-width: thin;
