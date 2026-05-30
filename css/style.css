@@ -89,6 +89,7 @@ section h2 {
 
 /* ===== Social icons ===== */
 .social { display: flex; gap: 1rem; font-size: 1.4rem; }
+.intro-photo .social { justify-content: center; margin-top: 1rem; }
 .social a { color: var(--text-muted); transition: color 0.15s ease; }
 .social a:hover { color: var(--accent); text-decoration: none; }
 
