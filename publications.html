@@ -1,11 +1,11 @@
-<!-- Joonmyung Choi 학술 개인 홈페이지 메인 페이지 -->
+<!-- Joonmyung Choi 학술 홈페이지 전체 논문 목록 페이지 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joonmyung Choi</title>
-  <meta name="description" content="Joonmyung Choi — M.S. & Ph.D. Integrated Student, MLV Lab, Korea University. Efficient Deep Learning, Token Compression, Video & Multi-Modal Understanding." />
+  <title>Publications — Joonmyung Choi</title>
+  <meta name="description" content="Full list of publications by Joonmyung Choi — MLV Lab, Korea University." />
   <link rel="stylesheet" href="css/style.css" />
   <!-- Font Awesome (brand/solid icons) + Academicons (Google Scholar) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -15,71 +15,21 @@
   <!-- ===== Navigation ===== -->
   <nav class="navbar">
     <div class="nav-inner">
-      <a href="#" class="nav-brand">Joonmyung Choi</a>
+      <a href="index.html" class="nav-brand">Joonmyung Choi</a>
       <button class="nav-toggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="asset/Joonmyung_CV.pdf" target="_blank" rel="noopener">CV</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container">
-    <!-- ===== Intro / About ===== -->
-    <section id="about" class="intro">
-      <div class="intro-text">
-        <h1>Joonmyung Choi</h1>
-        <p class="affiliation">
-          M.S. &amp; Ph.D. Integrated Student,
-          <a href="https://www.hyunwoojkim.com/home" target="_blank" rel="noopener">MLV Lab</a>,
-          Korea University
-        </p>
-        <p class="bio">
-          I am an Integrated M.S. &amp; Ph.D. student in Artificial Intelligence at
-          <strong>Korea University</strong>, advised by
-          <a href="https://scholar.google.com/citations?user=LfBoJt8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Hyunwoo J. Kim</a>.
-          My research focuses on <b><i>efficient deep learning</i></b>, especially
-          <b><i>token compression</i></b> for vision, video, and multi-modal models,
-          with the goal of making large-scale models faster and more practical for
-          <b><i>video and document understanding</i></b>.
-        </p>
-        <div class="social">
-          <a href="mailto:pizard@korea.ac.kr" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://scholar.google.com/citations?user=IaQRhu8AAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-          <a href="https://github.com/joonmyungchoi" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/joonmyung-choi-3165171a1/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="asset/Joonmyung_CV.pdf" target="_blank" rel="noopener" title="CV"><i class="fa-solid fa-file-lines"></i></a>
-        </div>
-      </div>
-      <div class="intro-photo">
-        <img src="asset/joonmyung.jpg" alt="Joonmyung Choi" />
-      </div>
-    </section>
-
-    <!-- ===== News ===== -->
-    <section id="news">
-      <h2>News</h2>
-      <div class="news-scroll">
-        <table class="news-table">
-          <tr><th>Feb 2026</th><td><b>DocPrune</b> is accepted to <b>CVPR 2026</b>. 🎉</td></tr>
-          <tr><th>Jun 2025</th><td><b>Representation Shift</b> is accepted to <b>ICCV 2025</b>.</td></tr>
-          <tr><th>Feb 2025</th><td><b>EfficientViM</b> is accepted to <b>CVPR 2025</b>.</td></tr>
-          <tr><th>Feb 2024</th><td><b>vid-TLDR</b> is accepted to <b>CVPR 2024</b>.</td></tr>
-          <tr><th>Feb 2024</th><td><b>MCTF</b> is accepted to <b>CVPR 2024</b>.</td></tr>
-          <tr><th>Aug 2023</th><td><b>Concept Bottleneck</b> is accepted to <b>MICCAI-W 2023</b> (Oral).</td></tr>
-          <tr><th>Jul 2023</th><td><b>RPO</b> is accepted to <b>ICCV 2023</b>.</td></tr>
-          <tr><th>Feb 2023</th><td><b>MeLTR</b> is accepted to <b>CVPR 2023</b>.</td></tr>
-          <tr><th>Sep 2022</th><td><b>TokenMixup</b> is accepted to <b>NeurIPS 2022</b>.</td></tr>
-          <tr><th>Mar 2022</th><td><b>Video-Text Representation Learning</b> is accepted to <b>CVPR 2022</b>.</td></tr>
-        </table>
-      </div>
-    </section>
-
-    <!-- ===== Selected Publications ===== -->
+    <!-- ===== Full Publications ===== -->
     <section id="publications">
-      <h2>Selected Publications</h2>
+      <h2>Publications</h2>
       <p class="pub-note">(<span>*</span>) denotes equal contribution. Author names with <strong>bold</strong> indicate me.</p>
       <ol class="pub-list">
 
@@ -119,6 +69,27 @@
   title     = {Representation Shift: Unifying Token Compression with FlashAttention},
   author    = {Choi, Joonmyung and Lee, S. and Ko, B. and Kim, E. and Kil, J. and Kim, Hyunwoo J.},
   booktitle = {IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025},
+}</pre>
+          </div>
+        </li>
+
+        <!-- C3 -->
+        <li class="pub-item">
+          <div class="pub-badge"><span class="badge">CVPR 2025</span></div>
+          <div class="pub-body">
+            <div class="pub-title">EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality</div>
+            <div class="pub-author">S. Lee, <strong>Joonmyung Choi</strong>, and Hyunwoo J. Kim</div>
+            <div class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
+            <div class="pub-links">
+              <button class="btn bib-toggle">Bib</button>
+              <a class="btn" href="https://arxiv.org/abs/2411.15241" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mlvlab/EfficientViM" target="_blank" rel="noopener">Code</a>
+            </div>
+            <pre class="bibtex hidden">@inproceedings{lee2025efficientvim,
+  title     = {EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality},
+  author    = {Lee, S. and Choi, Joonmyung and Kim, Hyunwoo J.},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2025},
 }</pre>
           </div>
@@ -166,6 +137,27 @@
           </div>
         </li>
 
+        <!-- C6 -->
+        <li class="pub-item">
+          <div class="pub-badge"><span class="badge">ICCV 2023</span></div>
+          <div class="pub-body">
+            <div class="pub-title">Read-only Prompt Optimization for Vision-Language Few-shot Learning</div>
+            <div class="pub-author">H. Lee*, S. Song*, J. Suh, <strong>Joonmyung Choi</strong>, S. Lee, and Hyunwoo J. Kim</div>
+            <div class="pub-venue">IEEE/CVF International Conference on Computer Vision (ICCV), 2023</div>
+            <div class="pub-links">
+              <button class="btn bib-toggle">Bib</button>
+              <a class="btn" href="https://arxiv.org/abs/2308.14960" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mlvlab/RPO" target="_blank" rel="noopener">Code</a>
+            </div>
+            <pre class="bibtex hidden">@inproceedings{lee2023rpo,
+  title     = {Read-only Prompt Optimization for Vision-Language Few-shot Learning},
+  author    = {Lee, H. and Song, S. and Suh, J. and Choi, Joonmyung and Lee, S. and Kim, Hyunwoo J.},
+  booktitle = {IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2023},
+}</pre>
+          </div>
+        </li>
+
         <!-- C7 -->
         <li class="pub-item">
           <div class="pub-badge"><span class="badge">CVPR 2023</span></div>
@@ -208,6 +200,47 @@
           </div>
         </li>
 
+        <!-- C9 -->
+        <li class="pub-item">
+          <div class="pub-badge"><span class="badge">CVPR 2022</span></div>
+          <div class="pub-body">
+            <div class="pub-title">Video-Text Representation Learning via Differentiable Weak Temporal Alignment</div>
+            <div class="pub-author">D. Ko, <strong>Joonmyung Choi</strong>, J. Ko, S. Noh, K. On, E. Kim, and Hyunwoo J. Kim</div>
+            <div class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+            <div class="pub-links">
+              <button class="btn bib-toggle">Bib</button>
+              <a class="btn" href="https://arxiv.org/abs/2203.16784" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mlvlab/VT-TWINS" target="_blank" rel="noopener">Code</a>
+            </div>
+            <pre class="bibtex hidden">@inproceedings{ko2022videotext,
+  title     = {Video-Text Representation Learning via Differentiable Weak Temporal Alignment},
+  author    = {Ko, D. and Choi, Joonmyung and Ko, J. and Noh, S. and On, K. and Kim, E. and Kim, Hyunwoo J.},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2022},
+}</pre>
+          </div>
+        </li>
+
+        <!-- J1 -->
+        <li class="pub-item">
+          <div class="pub-badge"><span class="badge badge-journal">IJCV 2025</span></div>
+          <div class="pub-body">
+            <div class="pub-title">Parameter-Efficient Fine-Tuning via Meta-Regularizer</div>
+            <div class="pub-author">J. Park, J. Ko, S. Lee, <strong>Joonmyung Choi</strong>, and Hyunwoo J. Kim</div>
+            <div class="pub-venue">International Journal of Computer Vision (IJCV), 2025</div>
+            <div class="pub-links">
+              <button class="btn bib-toggle">Bib</button>
+              <a class="btn" href="#" title="추가 예정">PDF</a>
+            </div>
+            <pre class="bibtex hidden">@article{park2025peft,
+  title   = {Parameter-Efficient Fine-Tuning via Meta-Regularizer},
+  author  = {Park, J. and Ko, J. and Lee, S. and Choi, Joonmyung and Kim, Hyunwoo J.},
+  journal = {International Journal of Computer Vision (IJCV)},
+  year    = {2025},
+}</pre>
+          </div>
+        </li>
+
         <!-- J2 -->
         <li class="pub-item">
           <div class="pub-badge"><span class="badge badge-journal">Inf. Sci. 2023</span></div>
@@ -228,35 +261,30 @@
           </div>
         </li>
 
-      </ol>
-      <p class="pub-more"><a href="publications.html">Full list of publications &rarr;</a></p>
-    </section>
+        <!-- W1 -->
+        <li class="pub-item">
+          <div class="pub-badge">
+            <span class="badge badge-workshop">MICCAI-W 2023</span>
+            <span class="badge badge-award">Oral</span>
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">Concept Bottleneck with Visual Concept Filtering for Explainable Medical Image Classification</div>
+            <div class="pub-author">I. Kim*, J. Kim*, <strong>Joonmyung Choi</strong>, and Hyunwoo J. Kim</div>
+            <div class="pub-venue">MedAGI Workshop, MICCAI, 2023 &nbsp;·&nbsp; Oral Presentation</div>
+            <div class="pub-links">
+              <button class="btn bib-toggle">Bib</button>
+              <a class="btn" href="https://arxiv.org/abs/2308.11920" target="_blank" rel="noopener">PDF</a>
+            </div>
+            <pre class="bibtex hidden">@inproceedings{kim2023concept,
+  title     = {Concept Bottleneck with Visual Concept Filtering for Explainable Medical Image Classification},
+  author    = {Kim, I. and Kim, J. and Choi, Joonmyung and Kim, Hyunwoo J.},
+  booktitle = {MedAGI Workshop, International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  year      = {2023},
+}</pre>
+          </div>
+        </li>
 
-    <!-- ===== Experience ===== -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <table class="exp-table">
-        <tr>
-          <td class="exp-org">Machine Learning &amp; Vision Lab (MLV Lab), Korea University</td>
-          <td class="exp-role">Researcher</td>
-          <td class="exp-date">Mar 2021 – Current</td>
-        </tr>
-        <tr>
-          <td class="exp-org">LG CnS</td>
-          <td class="exp-role">Intern</td>
-          <td class="exp-date">Jul 2019 – Aug 2019</td>
-        </tr>
-        <tr>
-          <td class="exp-org">Data Marketing Korea</td>
-          <td class="exp-role">Intern</td>
-          <td class="exp-date">Jan 2019 – Feb 2019</td>
-        </tr>
-        <tr>
-          <td class="exp-org">COSCOI</td>
-          <td class="exp-role">Researcher</td>
-          <td class="exp-date">Aug 2016 – Oct 2018</td>
-        </tr>
-      </table>
+      </ol>
     </section>
   </main>
 
