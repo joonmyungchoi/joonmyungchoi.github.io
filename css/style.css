@@ -93,18 +93,42 @@ section h2 {
 .social a:hover { color: var(--accent); text-decoration: none; }
 
 /* ===== News ===== */
+/* (3) 다음 줄이 반쯤 보이도록 높이 조정 */
+.news-wrap { position: relative; }
 .news-scroll {
-  max-height: 150px;
+  max-height: 135px;
   overflow-y: scroll;
   padding-right: 0.75rem;
   scrollbar-width: thin;
-  scrollbar-color: var(--text-muted) transparent;
+  scrollbar-color: var(--text-muted) var(--border);
 }
-.news-scroll::-webkit-scrollbar { width: 8px; }
-.news-scroll::-webkit-scrollbar-track { background: transparent; }
+/* (2) 스크롤바 트랙을 항상 보이게 */
+.news-scroll::-webkit-scrollbar { width: 9px; }
+.news-scroll::-webkit-scrollbar-track {
+  background: var(--border);
+  border-radius: 4px;
+}
 .news-scroll::-webkit-scrollbar-thumb {
   background: var(--text-muted);
   border-radius: 4px;
+}
+/* (1) 하단 페이드 — 아래에 더 있음을 암시 */
+.news-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 36px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  pointer-events: none;
+}
+/* (4) "↓ scroll for more" 힌트 */
+.news-hint {
+  margin: 0.5rem 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 .news-table { width: 100%; border-collapse: collapse; }
 .news-table th {
