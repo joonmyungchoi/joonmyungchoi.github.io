@@ -1,0 +1,217 @@
+/* 학술 홈페이지 전역 스타일 (단일 컬럼 레이아웃, 반응형, Publication 카드) */
+
+:root {
+  --accent: #2b6cb0;
+  --accent-soft: #ebf4ff;
+  --text: #1a202c;
+  --text-muted: #4a5568;
+  --border: #e2e8f0;
+  --badge-bg: #4a5568;
+  --max-width: 820px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Navigation ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-brand { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+.nav-brand:hover { text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+.nav-links a { color: var(--text-muted); font-weight: 500; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-toggle {
+  display: none;
+  background: none; border: none;
+  font-size: 1.25rem; cursor: pointer; color: var(--text);
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 1rem;
+}
+section { margin-bottom: 3rem; }
+section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ===== Intro ===== */
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.intro-text { flex: 1; }
+.intro-text h1 { font-size: 2rem; margin: 0 0 0.3rem; }
+.affiliation { color: var(--text-muted); margin: 0 0 1rem; font-size: 1rem; }
+.bio { margin: 0 0 1.2rem; }
+.intro-photo { flex: 0 0 180px; }
+.intro-photo img {
+  width: 180px; height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Social icons ===== */
+.social { display: flex; gap: 1rem; font-size: 1.4rem; }
+.social a { color: var(--text-muted); transition: color 0.15s ease; }
+.social a:hover { color: var(--accent); text-decoration: none; }
+
+/* ===== News ===== */
+.news-table { width: 100%; border-collapse: collapse; }
+.news-table th {
+  text-align: left;
+  vertical-align: top;
+  width: 110px;
+  padding: 0.4rem 1rem 0.4rem 0;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.news-table td { vertical-align: top; padding: 0.4rem 0; }
+
+/* ===== Publications ===== */
+.pub-note { color: var(--text-muted); font-size: 0.9rem; margin: -0.5rem 0 1.25rem; }
+.pub-note span { color: #c53030; }
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.pub-item:last-child { border-bottom: none; }
+.pub-badge {
+  flex: 0 0 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-start;
+}
+.badge {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.badge-journal { background: #2f855a; }
+.badge-workshop { background: #6b46c1; }
+.badge-award { background: #c05621; }
+
+.pub-body { flex: 1; min-width: 0; }
+.pub-title { font-weight: 600; margin-bottom: 0.2rem; }
+.pub-author { color: var(--text); font-size: 0.95rem; }
+.pub-venue { color: var(--text-muted); font-style: italic; font-size: 0.9rem; margin-top: 0.1rem; }
+
+.pub-links { margin-top: 0.5rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.btn {
+  font-size: 0.8rem;
+  font-family: inherit;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+.bibtex {
+  margin-top: 0.6rem;
+  background: #f7fafc;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+.hidden { display: none; }
+
+/* ===== Experience ===== */
+.exp-table { width: 100%; border-collapse: collapse; }
+.exp-table td { vertical-align: top; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.exp-table tr:last-child td { border-bottom: none; }
+.exp-org { font-weight: 600; }
+.exp-role { color: var(--text-muted); white-space: nowrap; padding-left: 1rem; }
+.exp-date { color: var(--text-muted); text-align: right; white-space: nowrap; font-size: 0.9rem; }
+
+/* ===== Footer ===== */
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+footer p { margin: 0; }
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 1.25rem 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { padding: 0.4rem 0; }
+
+  .intro { flex-direction: column-reverse; align-items: center; text-align: center; }
+  .intro-photo { flex: none; }
+  .social { justify-content: center; }
+
+  .pub-item { flex-direction: column; gap: 0.4rem; }
+  .pub-badge { flex-direction: row; }
+
+  .exp-table td { display: block; padding: 0.15rem 0; }
+  .exp-role, .exp-date { padding-left: 0; text-align: left; }
+  .exp-table tr { display: block; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+  .exp-table tr td { border-bottom: none; }
+}
