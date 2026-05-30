@@ -93,6 +93,11 @@ section h2 {
 .social a:hover { color: var(--accent); text-decoration: none; }
 
 /* ===== News ===== */
+.news-scroll {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
 .news-table { width: 100%; border-collapse: collapse; }
 .news-table th {
   text-align: left;
